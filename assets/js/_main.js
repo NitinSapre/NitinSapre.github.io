@@ -12,6 +12,76 @@ $(document).ready(function () {
     $(".author__urls-wrapper").find("button").toggleClass("open");
   });
 
+  // Contact dropdown toggle (use event delegation in case greedy nav moves elements)
+  $(document).on("click", ".contact-dropdown__toggle", function (e) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+    
+    var $dropdown = $(this).closest(".contact-dropdown");
+    var $menu = $dropdown.find(".contact-dropdown__menu");
+    var wasOpen = $dropdown.hasClass("is-open");
+    
+    console.log("Dropdown clicked!", {
+      dropdown: $dropdown.length,
+      menu: $menu.length,
+      wasOpen: wasOpen,
+      menuDisplay: $menu.css("display")
+    });
+    
+    // Close all dropdowns
+    $(".contact-dropdown").removeClass("is-open");
+    $(".contact-dropdown__menu").css({
+      "display": "none",
+      "visibility": "hidden"
+    });
+    
+    // If it wasn't open, open it now
+    if (!wasOpen) {
+      $dropdown.addClass("is-open");
+      // Force display and make sure parent doesn't clip
+      $dropdown.css("overflow", "visible");
+      $dropdown.closest(".visible-links").css("overflow", "visible");
+      $menu.css({
+        "display": "block",
+        "visibility": "visible",
+        "opacity": "1",
+        "position": "absolute",
+        "z-index": "10000"
+      });
+      
+      console.log("Dropdown opened!", {
+        hasOpenClass: $dropdown.hasClass("is-open"),
+        menuDisplay: $menu.css("display"),
+        menuVisibility: $menu.css("visibility"),
+        menuOffset: $menu.offset(),
+        menuWidth: $menu.width(),
+        menuHeight: $menu.height(),
+        parentOverflow: $dropdown.closest(".visible-links").css("overflow")
+      });
+    } else {
+      // Reset overflow when closing
+      $dropdown.css("overflow", "");
+      $dropdown.closest(".visible-links").css("overflow", "");
+    }
+    
+    return false;
+  });
+
+  // Close dropdown when clicking outside (run after toggle handler)
+  setTimeout(function() {
+    $(document).on("click", function (e) {
+      var $target = $(e.target);
+      // Don't close if clicking on toggle or inside dropdown
+      if ($target.closest(".contact-dropdown").length || 
+          $target.closest(".contact-dropdown__toggle").length) {
+        return;
+      }
+      // Close dropdown
+      $(".contact-dropdown").removeClass("is-open");
+      $(".contact-dropdown__menu").css("display", "none");
+    });
+  }, 100);
+
   // Close search screen with Esc key
   $(document).keyup(function (e) {
     if (e.keyCode === 27) {
