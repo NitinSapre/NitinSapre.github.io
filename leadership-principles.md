@@ -3,6 +3,7 @@ layout: single
 title: "My Leadership Principles"
 permalink: /leadership-principles/
 author_profile: false
+classes: wide
 ---
 
 ## How I lead
