@@ -21,7 +21,7 @@ title                    : "Nitin Sapre | Engineering Leadership"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Nitin Sapre"
-description              : "Technical Manager"
+description              : "Engineering Leader"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,7 +115,7 @@ analytics:
 author:
   name             : "Nitin Sapre"
   avatar           : "/assets/images/photo.jpg"
-  bio              : Currently working as Technical Manager at Addnode India, Pune.
+  bio              : Currently leading cross-functional backend, web, and mobile engineering teams at Addnode India, Pune.
   location         : 
   email            :
   links:
