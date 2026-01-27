@@ -17,11 +17,11 @@ minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "
 # Site Settings
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Nitin Sapre - Tech Manager"
+title                    : "Nitin Sapre - Techical Manager"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Nitin Sapre"
-description              : "An amazing website."
+description              : "Technical Manager"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -115,8 +115,8 @@ analytics:
 author:
   name             : "Nitin Sapre"
   avatar           : "/assets/images/photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Pune, India"
+  bio              : Currently working as Technical Manager at Addnode India, Pune.
+  location         : 
   email            :
   links:
     - label: "Email"
