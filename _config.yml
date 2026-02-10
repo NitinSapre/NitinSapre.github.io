@@ -115,28 +115,22 @@ analytics:
 author:
   name             : "Nitin Sapre"
   avatar           : "/assets/images/photo.jpg"
-  bio              : Currently leading cross-functional backend, web, and mobile engineering teams at Addnode India, Pune.
+  bio              : Engineering Manager with 17+ years of experience in software development and technical leadership. Currently leading cross-functional teams at Addnode India.
   location         : 
-  email            :
+  email            : 
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      #url: "https://www.linkedin.com/in/nitin-sapre/"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      #url: "mailto:saprenitin@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      #url: "https://nitinsapre.is-a.dev/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
+      #url: "https://github.com/NitinSapre"
 
 # Site Footer
 footer:

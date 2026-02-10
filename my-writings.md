@@ -6,32 +6,26 @@ author_profile: false
 classes: wide
 ---
 
-<a href="{{ '/' | relative_url }}" class="btn btn--primary">← Back to Home</a>
+[← Back to Home]({{ "/" | relative_url }})
 
-## Blog Posts & Articles
+<br/>
 
-Welcome to my collection of writings on engineering, leadership, and technology.
+This space is where I share my thoughts on software engineering, technical leadership, and building strong team cultures. I’ve been an avid reader for years, learning from books, articles, and the insights of people I follow in the engineering community. Writing is my way of reflecting, learning openly, and giving back. These posts are just the beginning — I hope to grow this into a meaningful body of work over time.
+
+---
 
 ### Featured Articles
 
 #### [View my engineering principles](/leadership-principles/)
-My core engineering principles and approaches to building scalable, reliable systems.
 
 ---
 
-### Recent Blog Posts
-
-*More blog posts coming soon...*
-
----
-
-## Topics I Write About
+### Topics I Want to Write About
 
 - Software Engineering & Architecture
 - Technical Leadership
-- Distributed Systems
-- Cloud Platforms & DevOps
 - Team Building & Coaching
 
 ---
+<br/>
 [← Back to Home]({{ "/" | relative_url }})
